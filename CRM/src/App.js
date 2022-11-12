@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import MainRouter from "./Router/MainRouter";
 import { isAuthenticated } from "./Utils/Requests/Auth";
 import setAuthToken from "./Utils/setAuthToken";
-import "./App.css";
+import "./App.scss";
 
 setAuthToken(isAuthenticated().token);
 

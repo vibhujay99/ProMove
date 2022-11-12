@@ -29,12 +29,12 @@ class AddNewBus extends Component {
     droppingPoints: "",
     image: "",
     buttonStyle: "block",
-    formData: ""
+    formData: "",
   };
 
   componentDidMount() {
     this.setState({
-      formData: new FormData()
+      formData: new FormData(),
     });
 
     this.fetchLocations();
@@ -45,7 +45,7 @@ class AddNewBus extends Component {
   nextStep = () => {
     const { step } = this.state;
     this.setState({
-      step: step + 1
+      step: step + 1,
     });
   };
 
@@ -53,7 +53,7 @@ class AddNewBus extends Component {
   prevStep = () => {
     const { step } = this.state;
     this.setState({
-      step: step - 1
+      step: step - 1,
     });
   };
 
@@ -63,7 +63,7 @@ class AddNewBus extends Component {
       this.setState({
         locations: resp.data,
         startLocation: resp.data[0]._id,
-        endLocation: resp.data[resp.data.length - 1]._id
+        endLocation: resp.data[resp.data.length - 1]._id,
       });
     }
   };
@@ -73,13 +73,13 @@ class AddNewBus extends Component {
     if (resp.status === 200) {
       this.setState({
         travels: resp.data,
-        travel: resp.data[0]._id
+        travel: resp.data[0]._id,
       });
     }
-  }
+  };
 
   // Handle fields change
-  handleChange = input => e => {
+  handleChange = (input) => (e) => {
     let value;
     if (input === "image") {
       if (e.length === 0) {
@@ -127,7 +127,7 @@ class AddNewBus extends Component {
       formData,
       locations,
       travels,
-      travel
+      travel,
     } = this.state;
 
     const values = {
@@ -151,7 +151,7 @@ class AddNewBus extends Component {
       formData,
       locations,
       travels,
-      travel
+      travel,
     };
 
     switch (step) {

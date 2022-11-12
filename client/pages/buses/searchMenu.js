@@ -69,7 +69,7 @@ const SearchMenu = ({ buses, info }) => {
         showSearch
         defaultValue={info.startLocation}
         style={{ width: 200, marginRight: "1rem" }}
-        placeholder="eg- Dhangadhi"
+        placeholder="eg- Colombo"
         optionFilterProp="children"
         onChange={onChangeFrom}
         onFocus={onFocus}
@@ -92,7 +92,7 @@ const SearchMenu = ({ buses, info }) => {
         showSearch
         defaultValue={info.endLocation}
         style={{ width: 200, marginRight: "1rem" }}
-        placeholder="eg- Kathmandu"
+        placeholder="eg- Kandy"
         optionFilterProp="children"
         onChange={onChangeTo}
         onFocus={onFocus}

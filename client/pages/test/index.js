@@ -9,7 +9,7 @@ const Test = ({ user }) => {
 };
 
 Test.getInitialProps = () => {
-  let user = "Ujjal";
+  let user = "Vibhu";
   return { user };
 };
 

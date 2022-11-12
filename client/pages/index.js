@@ -85,14 +85,14 @@ const Home = () => {
 
           <div className="row">
             <div className="input-background">
-              <h1 className="tag-line">Get Seat Go</h1>
+              <h1 className="tag-line">Go for PRO Move</h1>
               <div className="route-form">
                 <label htmlFor="">
                   <h4 className="color-white">From: </h4>
                 </label>
                 <Select
                   showSearch
-                  placeholder="eg- Dhangadhi"
+                  placeholder="eg- Colombo"
                   style={{ width: 200, marginRight: "1rem" }}
                   optionFilterProp="children"
                   onChange={onChangeFrom}
@@ -118,7 +118,7 @@ const Home = () => {
                 <Select
                   showSearch
                   style={{ width: 200, marginRight: "1rem" }}
-                  placeholder="eg- Kathmandu"
+                  placeholder="eg- Kandy"
                   optionFilterProp="children"
                   onChange={onChangeTo}
                   name="endLocation"

@@ -18,10 +18,10 @@ const Header = ({ history }) => {
     <header className="main-header">
       <Link to="/" className="logo">
         <span className="logo-mini">
-          <b>DG</b>
+          <b>PM</b>
         </span>
         <span className="logo-lg">
-          <b>Dhan</b>-gaadi
+          <b>Pro</b>-Move
         </span>
       </Link>
       <nav className="navbar navbar-static-top">
@@ -37,7 +37,7 @@ const Header = ({ history }) => {
           <ul className="nav navbar-nav">
             <li className="dropdown messages-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <h4>Namaste! Admin</h4>
+                <h4>සාදරයෙන් පිළිගනිමු! Admin</h4>
               </a>
               <ul className="dropdown-menu">
                 <li>
