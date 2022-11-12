@@ -18,21 +18,21 @@ class AddOwner extends Component {
     phone: "",
     photo: "",
     error: "",
-    loading: ""
+    loading: "",
   };
 
   componentDidMount() {
     this.setState({
-      formData: new FormData()
+      formData: new FormData(),
     });
   }
 
-  submit = async e => {
+  submit = async (e) => {
     e.preventDefault();
     if (!this.checkPasswordConfirmation()) {
       Swal.fire({
         type: "error",
-        title: "Password did not match"
+        title: "Password did not match",
       });
     } else {
       this.setState({ loading: true });
@@ -43,7 +43,7 @@ class AddOwner extends Component {
         console.log("value--", value);
       }
 
-      const resp = await addOwner({...this.state}).catch(err => {
+      const resp = await addOwner({ ...this.state }).catch((err) => {
         this.setState({ error: err.response.data.error, loading: false });
       });
 
@@ -52,7 +52,7 @@ class AddOwner extends Component {
 
         Swal.fire({
           type: "success",
-          title: "New Owner Added"
+          title: "New Owner Added",
         });
 
         this.props.history.push("/people-owners");
@@ -64,7 +64,7 @@ class AddOwner extends Component {
     return this.state.password === this.state.password2;
   };
 
-  handleChange = input => e => {
+  handleChange = (input) => (e) => {
     let value;
     // if (input === "photo") {
     //   if (e.length === 0) {
@@ -74,7 +74,7 @@ class AddOwner extends Component {
     //   value = e[0];
     //   this.setState({ buttonStyle: "none" });
     // } else {
-      value = e.target.value;
+    value = e.target.value;
     // }
 
     // this.state.formData.set(input, value);
@@ -92,7 +92,7 @@ class AddOwner extends Component {
       phone,
       citizenshipNumber,
       error,
-      loading
+      loading,
     } = this.state;
     return (
       <Layout title="Update Profile">
@@ -125,12 +125,12 @@ class AddOwner extends Component {
             </div>
 
             <div className="form-group">
-              <label>Citizenship Number</label>
+              <label>NIC Number</label>
               <input
                 type="text"
                 className="form-control"
                 required
-                placeholder="Enter your citizenship number"
+                placeholder="Enter your NIC number"
                 onChange={handleChange("citizenshipNumber")}
                 value={citizenshipNumber}
               />
@@ -178,20 +178,6 @@ class AddOwner extends Component {
             >
               Add Owner
             </button>
-
-            {/* <div className="form-group">
-              <ImageUploader
-                withIcon={true}
-                buttonText="Upload photo"
-                onChange={handleChange("photo")}
-                imgExtension={[".jpg", ".jpeg", ".gif", ".png", ".gif"]}
-                maxFileSize={5242880}
-                singleImage={true}
-                withPreview={true}
-                buttonStyles={{ display: this.state.buttonStyle }}
-                //   defaultImage={values.image}
-              />
-            </div> */}
           </>
         )}
       </Layout>
