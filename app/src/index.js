@@ -18,7 +18,7 @@ export default function Main() {
 
   return (
     <PaperProvider theme={theme}>
-        <RootRoute />
+      <RootRoute />
     </PaperProvider>
   );
 }

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet, Button, AsyncStorage } from "react-native";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
-import { signIn} from '../store/actions/user_actions';
-import { bindActionCreators } from 'redux';
+import { signIn } from "../store/actions/user_actions";
+import { bindActionCreators } from "redux";
 
 export class LoginScreen extends Component {
   componentDidMount() {
@@ -28,15 +28,14 @@ const styles = StyleSheet.create({
   container: {},
 });
 
-
-function mapStateToProps(state){
+function mapStateToProps(state) {
   return {
-      isAuth: state.User.auth.isAuth
-  }
+    isAuth: state.User.auth.isAuth,
+  };
 }
 
-function mapDispatchToProps(dispatch){
-  return bindActionCreators({signIn},dispatch);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ signIn }, dispatch);
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(LoginScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);

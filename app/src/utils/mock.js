@@ -1,23 +1,23 @@
 export const addressData = [
   {
     id: 1,
-    name: "Dhangadhi",
+    name: "Colombo",
   },
   {
     id: 2,
-    name: "Kathmandu",
+    name: "Kandy",
   },
   {
     id: 3,
-    name: "Jhapa",
+    name: "Galle",
   },
   {
     id: 4,
-    name: "Nepalgunj",
+    name: "Gampaha",
   },
   {
     id: 5,
-    name: "Pokhara",
+    name: "Kaluthara",
   },
   {
     id: 6,
@@ -25,31 +25,31 @@ export const addressData = [
   },
   {
     id: 7,
-    name: "Palpa",
+    name: "Jaffna",
   },
   {
     id: 8,
-    name: "Doti",
+    name: "Matara",
   },
   {
     id: 9,
-    name: "Mahendranagar",
+    name: "killinochchi",
   },
   {
     id: 10,
-    name: "Parsa",
+    name: "Anuradhapura",
   },
   {
     id: 11,
-    name: "Baglung",
+    name: "Ampara",
   },
   {
     id: 12,
-    name: "Illam",
+    name: "Rathnapura",
   },
   {
     id: 13,
-    name: "Jumla",
+    name: "Kegalle",
   },
 ];
 

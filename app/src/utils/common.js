@@ -1,6 +1,6 @@
 import Colors from "../constants/ConstantColors";
 
-export const headerOptions = (headerTitle = "DHAN-GAADI") => ( {
+export const headerOptions = (headerTitle = "PROMOVE") => ( {
     title: null,
     headerStyle: {
       // backgroundColor: Colors.tintColor,

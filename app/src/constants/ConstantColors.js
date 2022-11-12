@@ -1,25 +1,25 @@
-const tintColor = '#001529';
+const tintColor = "#001529";
 
 export default {
   tintColor,
   grayColor: "#66727e",
-  backgroundColor: '#86909a',
+  backgroundColor: "#86909a",
   bannerColor: "#2978a0",
   filledColor: "#2978a0",
   initialColor: "#DCDCDC",
   _filledColor: "#77ba99",
   cardColor: "#f1f7ff",
-  tabIconDefault: '#ccc',
+  tabIconDefault: "#ccc",
   headerTintColor: "#fff",
   activeTintColor: "#fff",
-  inactiveTintColor: 'gray',
+  inactiveTintColor: "gray",
   tabIconSelected: tintColor,
-  tabBar: '#fefefe',
-  errorBackground: 'red',
-  errorText: '#fff',
-  warningBackground: '#EAEB5E',
-  warningText: '#666804',
+  tabBar: "#fefefe",
+  errorBackground: "red",
+  errorText: "#fff",
+  warningBackground: "#EAEB5E",
+  warningText: "#666804",
   noticeBackground: tintColor,
-  noticeText: '#fff',
+  noticeText: "#fff",
   // backgroundColor: "#001529"
 };
